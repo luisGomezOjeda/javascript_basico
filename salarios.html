@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salarios</title>
+  <link rel="stylesheet" href="./salarios.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400;1,500;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,900;1,100;1,400;1,500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <form class="from">
+    <div class="form-container-input">
+      <p class="form-p">coloca el nombre y salario de cada persona</p>
+      <input type="text"id="nombre_input" placeholder = "nombre" class="form-item-input input_name">
+      <input type="number"id="salario_input" placeholder="salario" class="form-item-input input_number">
+    </div>
+    <div class="form-container-buttons">
+      <button type = "button" onclick="recibir_y_ordenar()" class="from-buttom">enviar</button>
+      <button type = "button" onclick="calcular_media_aritmetica()" class="from-buttom">calcular media aritmerica</button>
+      <button type = "button" onclick="calcular_mediana()" class="from-buttom">calcular mediana</button>
+      <button type = "button" onclick="calcular_moda()" class="from-buttom">calcular moda</button>
+      <button type = "button" onclick="calcular_top_10()" class="from-buttom">calcular top 10%</button>
+    </div>
+    <div class="form-container-resultado">
+      <p id="mostrar_lista" class="form-resultado-p"></p>
+      <div class="form-container-resultado-calculo">
+        <h3 id="resultado_media" class="body-h3"></h3>
+        <h3 id="resultado_mediana" class="body-h3"></h3>
+        <h3 id="resultado_moda" class="body-h3"></h3>
+        <h3 id="resultado_top_10"></h3>
+      </div>
+    </div>
+  </form>
+    <script src="./salarios.js"></script>
+</body>
+</html>

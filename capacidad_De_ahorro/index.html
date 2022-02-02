@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capacidad de Ahorro</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rationale&family=Roboto:ital,wght@0,100;0,300;0,900;1,100;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="title-main">Capacidad de ahorro</h1>
+    <form class="form">
+        <div class="form-container-row-1">
+            <h2 class="form-title">ingresos</h2>
+        </div>
+        <div class="form-container-row-2--col-1">
+            <h4 class="form-title-input">ingresos fijos</h4>
+            <input type="number" id="ingresos_fijos" class="form-input-A">
+        </div>
+        <div class="form-container-row-2--col-2">
+            <h4 class="form-title-input">ingresos no fijos</h4>
+            <input type="number" id="ingresos_no_fijos" class="form-input-A">
+        </div>
+        <div class="form-container-row-3">
+            <h2 class="form-title">gastos</h2>
+        </div>
+        <div class="form-container-row-4--col-1">
+            <h4 class="form-title-input">servicios basicos</h4>
+            <input type="number" id="servicios_basicos" class="form-input-B">
+        </div>
+        <div class="form-container-row-4--col-2">
+            <h4 class="form-title-input">alimentación</h4>
+            <input type="number" id="alimentacion" class="form-input-B">
+        </div>
+        <div class="form-container-row-5--col-1">
+            <h4 class="form-title-input">movilidad</h4>
+            <input type="number" id="movilidad" class="form-input-B">
+        </div>
+        <div class="form-container-row-5--col-2">
+            <h4 class="form-title-input">vivienda</h4>
+            <input type="number" id="vivienda" class="form-input-B">
+        </div>
+        <div class="form-container-row-6--col-1">
+            <h4 class="form-title-input">deudas</h4>
+            <input type="number" id="deudas" class="form-input-B">
+        </div>
+        </div>
+        <div class="form-container-row-6--col-2">
+            <h4 class="form-title-input">otros gastos</h4>
+            <input type="number" id="otros_gastos" class="form-input-B">
+        </div>
+        <div class="form-container-row-7">
+            <h4 class="form-title-input b-1">impuestos</h4>
+            <select name="select" class="form-select" id="select">
+                <option value="0">pais</option>
+                <option value="1"> argentina  -- 30%</option>
+                <option value="2"> colombia  --  15%</option>
+                <option value="3"> uruguay  --  20%</option>
+                <option value="4"> ecuador  --  12%</option>
+            </select>
+            <button type="button" onclick="recibir_y_calcular()" class="form-button">calcular</button>
+            <img src="./assets/icons/Luis_Gomez_cocosign.png" alt="firma de luis gomez" class="firma">
+            <img src="https://i.pinimg.com/280x280_RS/59/a9/86/59a98659f1737f87e6cd67fd1b0d16c1.jpg" alt="" class="logo">
+        </div>
+    </form>
+    <section class="main-section-resultado">
+        <p id="resultado"></p>
+    </section>
+    <script src="./calculo.js"></script>
+</body>
+</html>

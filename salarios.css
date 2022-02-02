@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+
+body{
+    background-image:url("https://lh3.googleusercontent.com/pw/AM-JKLVSj6PO7W6pyoJyIrsC0vQpwulxYtjgVw8v_P65Y4MS3PLJfsOQUKqpoF4n-_diZa6tIbqt4EbgzuEQdLo5de32U0b45RFa-Oy2Pg2eLd8l6rCZnVPpTVm3Vnz7gqjCGRO667Ue_CR5F-SKcLaXNw2Cnw=w1520-h950-no?authuser=0");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+}
+
+.from{
+    background-image: url("https://lh3.googleusercontent.com/pw/AM-JKLXd_AN-CAlNt-dkgm-5Ugwia-ktLdZPwOIx6PyZlK_5Q7vEIt6rXEaLDyhT1suy6oiMPBEd2S6Z4WPLrTc4pvZ_P7zYoK4lfopu_7fFjqFtMGs5nnbr8SvlGBNGx-P_qXGBtaiRhroOEBdTZVRPupvfFQ=w1520-h950-no?authuser=0");
+    border-radius: 29px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 65%;
+    height: 95%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns:1fr;
+    grid-template-rows: 3fr 1fr 3fr ;
+    margin: 0 auto;
+}
+
+
+.form-container-input{
+    grid-row: 1/2;
+    grid-column: 1/3;
+    place-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr ;
+    justify-items:center;
+    width: 100%;
+    height: 100%;
+}
+
+.form-p{
+    grid-area: 1/1/2/3;
+    margin-top: 45px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    height: 20px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.form-container-input .form-item-input.input_number{
+    grid-area: 2/2/3/3;
+}
+.form-container-input .form-item-input.input_name{
+    grid-area: 2/1/3/2;
+}
+
+.form-container-input .form-item-input{
+    width: 80%;
+    height: 30%;
+    margin: auto ;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.form-container-input .form-item-input::placeholder{
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.form-container-buttons{
+    grid-area: 2/1/3/3;
+    display: flex;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.form-container-buttons button{
+    font-size: 1.6rem;
+    width: auto;
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: linear-gradient(90deg , #865757 ,#E3B7EC);
+}
+
+.form-container-resultado{
+    grid-row:3/4 ;
+}
+
+.form-resultado-p{
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.form-container-resultado-calculo{
+    display: flex;
+    margin-top: 140px;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+.form-container-resultado-calculo h3{
+    font-size: 1.6rem;
+    font-weight: bolder;
+    margin: 0 50px;
+}

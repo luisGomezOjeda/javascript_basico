@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>calcula la moda</h1>
+    <form action="moda">
+        <label for="moda">Colaca la lista de numeros <br>
+        a la que quieres calcular la moda</label>
+        <input type="number" id="moda" placeholder="lista de numeros">
+        <button type="button" onclick="recibir_numero()">enviar</button>
+        <button type="button" onclick="calcular_moda()">calcular</button>
+    </form>
+    <script src="./moda.js"></script>
+    <p id="resultado"></p>
+</body>
+</html>

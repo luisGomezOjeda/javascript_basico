@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>calcular el promedio</h1>
+    <form action="promedio">
+        <label for="promedio">
+            coloca los numeros para tu fila
+        </label>
+        <input type="num"id="promedio">
+        <button type ="button" onclick="recibir_numero()">enviar numero</button>
+        <button type="button" onclick="calcular_promedio()">calcular promedio</button>
+    </form>
+    <p id="resultado"></p>
+    <script src="./promedio.js"></script>
+</body>
+</html>
