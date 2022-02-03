@@ -20,3 +20,5 @@
 -segundo paso:implementar las fomulas en javascript
 -tercer paso:creae funciones
 -cuarto paso:integrar javascript con html
+
+#https://luisgomezojeda.github.io/javascript_basico/
